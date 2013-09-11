@@ -1,5 +1,23 @@
+$brown: #6A2F0D; // brown
+$maroon: #6a1802; // maroon
+$orange: #FF8C2F; // orange
+$white: white;
+$blue: #075899; // blue
+$blue_grey: #C7D7DB; // blue gray
+$darker_grey: #606263; // darker gray
+$header_border_color: #D74401; //header border color
 
-// Vertical Rhythm
-$base-font-size: 13px;
-$base-line-height: 24px;
-@include establish-baseline();
+// background colors
+$background1: #FCF5AA;
+$background2: #f2f4f7;
+$background3: #e7ebf0;
+$background4: #fff;
+$background5: #C14102; // header background top
+$background6: #852201; //header background bottom
+
+
+// fonts
+$font_size: 13px;
+$line_height: 24px;
+$font_family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+$text_color: #333;

@@ -21,3 +21,32 @@ $font_size: 13px;
 $line_height: 24px;
 $font_family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 $text_color: #333;
+
+// header sizes
+$h1_size: $font_size + 9px;
+$h2_size: $font_size + 6px;
+$h3_size: $font_size + 3px;
+
+// borders
+$border1: 1px solid shade($brown, 60%);
+$border2: 1px solid #CDCDCD;
+$border3: 1px solid shade($orange, 50%);
+$border4: 1px solid $header_border_color;
+
+// gradients
+$grad1: linear-gradient($brown 0, shade($brown, 40%) 100%);
+$grad3: linear-gradient($orange 0, shade($orange, 40%) 100%);
+$grad4: linear-gradient($background5 0, shade($background5, 20%) 100%); //header top
+$grad2: linear-gradient($background6 0, shade($background6, 20%) 100%); //header bottom
+
+// spacing
+$spacing: 10px;
+
+// border radius
+$border_radius: 5px;
+
+// text shadow
+$text_shadow: 0 -1px rgba(0,0,0,0.9);
+
+// Box Shadow
+$box_shadow: 0 1px 3px rgba(0,0,0,0.9), 0 -1px 2px rgba(250,250,250,0.8);

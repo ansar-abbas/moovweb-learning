@@ -22,12 +22,29 @@ match($status) {
         log("--> Importing pages/home.ts in mappings.ts")
         @import pages/home.ts
       }
+      with(/brands/) {
+        log("--> Importing pages/brands.ts in mappings.ts")
+        @import "pages/brands.ts"
+      }
+      with(/sample-product/) {
+        log("--> Importing pages/product.ts in mappings.ts")
+        @import "pages/product.ts"
+      }
+      with(/shop-/) {
+        log("--> Importing pages/category.ts in mappings.ts")
+        @import "pages/category.ts"
+      }
       else() {
+      $("//div[@id='ProductDetails']/ancestor::html") {
+        log("--> Importing product.ts - mapping on content")
+        @import pages/product.ts
+      }
         log("--> No page match in mappings.ts")
       }
+
     }
   }
-
+  
   else() {
     # not 200 or 302 response status
     log("--> STATUS: " + $status + " assuming its an error code pages/error.ts")
